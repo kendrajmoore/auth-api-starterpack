@@ -23,7 +23,6 @@ Sample requests
 
 ```
 $https://kendrajmoore.github.io/portlandia/
-$https://kendrajmoore.github.io/portlandia/
 ```
 
 ## Characters Schema
