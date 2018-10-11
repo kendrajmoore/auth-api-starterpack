@@ -73,8 +73,8 @@ router.put('/:id', (req, res) => {
   Episode.findByIdAndUpdate(req.params.id, req.body, (err, episode) => {
     res.status(200).redirect('/');
   }).catch(err => {
-      console.log(err.message);
-    });
+    console.log(err.message);
+  });
 });
 //  delete
 router.delete('/:id', (req, res) => {

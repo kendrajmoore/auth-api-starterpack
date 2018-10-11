@@ -69,7 +69,7 @@ app.get('*', (req, res) => {
   return res.status(404);
 });
 
-//addd stuff
+//  addd stuff
 // #TODO: Additional non-API routes go here.
 
 module.exports = app;

@@ -23,26 +23,25 @@ router.post('/signup', (req, res) => {
     // }
   user.save().then(user => {
     const token = jwt.sign(
-        {
-          _id: user._id
-        },
+      {
+        _id: user._id
+      },
             process.env.JWT_SECRET,
 
-          {
-            expiresIn: '60 days'
-          }
+      {
+        expiresIn: '60 days'
+      }
         );
     res.cookie('nToken', token, {
-          maxAge: 900000,
-          httpOnly: true
-      });
-        res.status(200).redirect('/');
+      maxAge: 900000,
+      httpOnly: true
     });
+    res.status(200).redirect('/');
+  });
 });
 
 // LOGIN FORM
 router.get('/login', (req, res) => {
-    console.log("LOGIN");
   res.status(200).render('users/login.hbs');
 });
 
@@ -55,13 +54,13 @@ router.post('/login', (req, res) => {
         .then(user => {
           if (!user) {
                 // User not found
-                res.status(401).send({ message: 'no denied' });
-            }
+            res.status(401).send({ message: 'no denied' });
+          }
             // Check the password
           user.comparePassword(password, (err, isMatch) => {
-              if (!isMatch) {
+            if (!isMatch) {
                     // Password does not match
-                    res.status(401).send({ message: 'no denied' });
+                res.status(401).send({ message: 'no denied' });
                 }
                 // Create a token
                 const token = jwt.sign(
@@ -73,15 +72,15 @@ router.post('/login', (req, res) => {
                 res.cookie('nToken', token, { maxAge: 900000, httpOnly: true });
                 res.status(200).redirect('/');
             });
-        })
+      })
         .catch(err => {
             console.log(err);
-        });
+      });
 });
 
 router.get('/logout', (req, res) => {
     res.clearCookie('nToken');
-    res.status(200).redirect('/');
+  res.status(200).redirect('/');
 });
 
 module.exports = router;
