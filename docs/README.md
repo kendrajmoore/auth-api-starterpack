@@ -9,7 +9,7 @@ Official documentation: https://kendrajmoore.github.io/portlandia/
 ## Base URL
 
 ```
-$ https://kendrajmoore.github.io/portlandia/
+$ https://portlandia-api.herokuapp.com/
 ```
 
 The base url contains information about all available API's resources. All responses will return data in json.
@@ -22,7 +22,9 @@ There are two available resources
 Sample requests
 
 ```
-$https://kendrajmoore.github.io/portlandia/
+$https://portlandia-api.herokuapp.com/portlandia/episode
+$https://portlandia-api.herokuapp.com/portlandia/character
+
 ```
 
 ## Characters Schema
@@ -71,7 +73,7 @@ https://kendrajmoore.com/portlandia/characters/
 ### Get all episodes
 You can access the list of characters by using the `/episode` endpoint.
 ```
-https://kendrajmoore.github.io/portlandia/episode
+https://portlandia-api.herokuapp.com/portlandia/episode
 ```
 ```js
 
