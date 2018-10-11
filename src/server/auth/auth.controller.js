@@ -4,7 +4,7 @@ const express = require('express');
 
 const router = express.Router();
 
-const User = require('./auth/model.js');
+const User = require('./auth.model.js');
 
 // const bcrypt = require('bcrypt');
 
@@ -26,7 +26,7 @@ router.post('/signup', (req, res) => {
         {
           _id: user._id
         },
-            process.env.SECRET,
+            process.env.JWT_SECRET,
 
           {
             expiresIn: '60 days'
@@ -42,6 +42,7 @@ router.post('/signup', (req, res) => {
 
 // LOGIN FORM
 router.get('/login', (req, res) => {
+    console.log("LOGIN");
   res.status(200).render('users/login.hbs');
 });
 
@@ -65,7 +66,7 @@ router.post('/login', (req, res) => {
                 // Create a token
                 const token = jwt.sign(
                     { _id: user._id, username: user.username },
-                    process.env.SECRET,
+                    process.env.JWT_SECRET,
                     { expiresIn: '60 days' }
                 );
                 // Set a cookie and redirect to root

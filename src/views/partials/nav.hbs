@@ -13,18 +13,18 @@
            <li class='nav-item active'>
              <a class='nav-link' href='/'>Home</a></p>
            </li>
-           {{#if currentUser}}
+           <!-- {{#if currentUser}} -->
        <li class='nav-item active'>
          <a  class='nav-link' href='/portlandia/episode/new'> Add Episode</a>
        </li>
        <li class='nav-item active'>
          <a  class='nav-link' href='/portlandia/character/new'> Add Character</a>
        </li>
-       <li class='nav-item active'>
+       <!-- <li class='nav-item active'> -->
            <!-- <button class='orange' type='submit'>Button</button> -->
-           <li><a href='/portlandia/user/logout'>Logout</a></li>
+           <!-- <li><a href="/portlandia/user/logout" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Logout</a> -->
            <!-- <button class='orange' href='/user/logout' type='submit'>Logout</button> -->
-       </li>
+       <!-- </li> -->
        {{/if}}
        {{else}}
        <li class='nav-item active'>
@@ -41,7 +41,7 @@
  </li>
   <li class='nav-item active'>
       <!-- <button class='orange' type='submit'>Button</button> -->
-      <li><a href='/portlandia/user/logout'>Logout</a></li>
+       <li><a href="/portlandia/user/logout" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Logout</a>
       <!-- <button class='orange' href='/user/logout' type='submit'>Logout</button> -->
   </li>
    {{/if}}
