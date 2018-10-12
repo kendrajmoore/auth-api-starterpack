@@ -5,7 +5,7 @@ This project is intended to be an API that returns data and characters that have
 ***Portlandia-API*** is a custom API on Node using Express and connect to Mongo DB using Mongoose.
 
 Official documentation: https://kendrajmoore.github.io/portlandia/
-Official website:$https://portlandia-api.herokuapp.com/
+Official website: https://portlandia-api.herokuapp.com/
 
 ## Base URL
 
