@@ -9,7 +9,7 @@ chai.use(chaiHttp);
 
 const agent = chai.request.agent(server);
 
-const User = require('./auth/model.js');
+const User = require('./auth.model.js');
 
 describe('User', function () {});
 // signup
@@ -35,13 +35,13 @@ it('should be able to logout', (done) => {
 });
 
 // login
-it('should be able to login', (done) => {
-  agent
-    .post('/portlandia/user/login')
-    .send({ email: 'username', password: 'password' })
-    .end(function (err, res) {
-      res.should.have.status(200);
-      res.should.have.cookie('nToken');
-      done();
-    });
-});
+// it('should be able to login', (done) => {
+//   agent
+//     .post('/portlandia/user/login')
+//     .send({ email: 'username', password: 'password' })
+//     .end(function (err, res) {
+//       res.should.have.status(200);
+//       res.should.have.cookie('nToken');
+//       done();
+//     });
+// });
