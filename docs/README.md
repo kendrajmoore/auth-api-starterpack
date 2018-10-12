@@ -9,7 +9,7 @@ Official documentation: https://kendrajmoore.github.io/portlandia/
 ## Base URL
 
 ```
-$https://portlandia-api.herokuapp.com/portlandia/episode
+$https://portlandia-api.herokuapp.com/
 ```
 
 The base url contains information about all available API's resources. All responses will return data in json.
