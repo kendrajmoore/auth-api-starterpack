@@ -95,13 +95,13 @@ https://portlandia-api.herokuapp.com/portlandia/episode
 ## Installation
 
 ```js
-$ yarn install
+$ npm install
 ```
 
 ## Run
 
 ```js
-$ yarn start
+$ npm start
 ```
 
 ## Project Team
