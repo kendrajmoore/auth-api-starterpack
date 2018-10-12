@@ -27,6 +27,21 @@ $https://portlandia-api.herokuapp.com/portlandia/episode
 $https://portlandia-api.herokuapp.com/portlandia/character
 
 ```
+## Resources
+
+### [Character]
+- [```GET``` All Characters]()
+- [```GET``` Single Character]()
+- [```POST``` Create Character]()
+- [```PUT``` Update Character]()
+- [```DELETE``` Remove Character]()
+
+### [Episode]
+- [```GET``` All Episodes]()
+- [```GET``` Single Episode]()
+- [```POST``` Create Episode]()
+- [```PUT``` Update Episode]()
+- [```DELETE``` Remove Episode]()
 
 ## Characters Schema
 |Key|Type|Description|
