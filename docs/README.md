@@ -9,7 +9,7 @@ Official documentation: https://kendrajmoore.github.io/portlandia/
 ## Base URL
 
 ```
-$ https://portlandia-api.herokuapp.com/
+$https://portlandia-api.herokuapp.com/portlandia/episode
 ```
 
 The base url contains information about all available API's resources. All responses will return data in json.
@@ -38,21 +38,21 @@ $https://portlandia-api.herokuapp.com/portlandia/character
 ### Get all characters
 You can access the list of locations by using the `/` endpoint.
 ```
-https://kendrajmoore.com/portlandia/characters/
+https://kendrajmoore.com/portlandia/character/
 ```
 ```js
 
   "results": {
     "id": 1,
     "name": "Carrie",
-    "image": "https://rickandmortyapi.com/api/location?page=2",
+    "image": "https://google.com/img/12393",
     "episode": [1, 2, 3, 4,]
   },
   "results": [
       {
        "id": 1,
        "name": "Carrie",
-       "image": "https://rickandmortyapi.com/api/location?page=2",
+       "image": "https://google.com/img/12393",
        "episode": [1, 2, 3, 4,]
    }
 ]
